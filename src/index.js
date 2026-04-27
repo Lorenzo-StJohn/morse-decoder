@@ -37,7 +37,7 @@ const MORSE_TABLE = {
   '-----': '0',
 };
 
-function decode(expr) {
+module.exports = function decode(expr) {
   // write your solution here
   let result = '';
   let key;
@@ -56,8 +56,4 @@ function decode(expr) {
     }
   }
   return result;
-}
-
-module.exports = {
-  decode,
 };
